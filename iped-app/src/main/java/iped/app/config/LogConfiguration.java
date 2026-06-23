@@ -120,7 +120,7 @@ public class LogConfiguration {
     }
 
     private String getSanitizedUserName() {
-        return System.getProperty("user.name", "unknown").replaceAll("[\\t\\r\\n]", "_"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+        return System.getProperty("user.name", "unknown_user").replaceAll("[\\t\\r\\n]", " "); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     }
 
     public PrintStream getSystemOut() {
